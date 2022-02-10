@@ -1,0 +1,46 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background:linear-gradient(to right,rgb(102, 102, 228,0.75),rgb(66, 245, 66,0.75));
+}
+.calc-grid{
+    display:grid;
+   
+    grid-template-columns: repeat(4,5rem);
+    grid-template-rows: minmax(5rem,auto) repeat(6,4rem);
+    
+}
+.output{
+    background-color: rgba(0, 0, 0, 0.75);
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: rgba(35, 243, 243, 0.966);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.space{
+    margin-top: 4rem;
+    margin-left: 10rem;
+}
+.output .up{
+    font-size: 1.5rem;
+}
+.output .down{
+    font-size: 3rem;
+   
+    
+}
+.but{
+    font-size: 1.5rem;
+    background-color:rgba(89, 47, 243, 0.65);
+    border:1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+.but:hover,:focus{
+    background-color:rgba(225, 225, 225, 0.27);  
+}
